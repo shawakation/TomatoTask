@@ -2,7 +2,12 @@ package com.android.tomatotask;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+<<<<<<< HEAD
 import android.annotation.SuppressLint;
+=======
+import java.util.Locale;
+
+>>>>>>> second commit
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -30,6 +35,7 @@ public class BreakActivity extends Activity implements OnClickListener {
 	private int rest=0;
 	private TimeCount time;
 	private int timeSpan;
+<<<<<<< HEAD
 	private boolean showShake = true;		//震动
 	private String showRing;					//铃声
 	private Vibrator vibrator;
@@ -38,6 +44,12 @@ public class BreakActivity extends Activity implements OnClickListener {
 	public BreakActivity() {
 		// TODO 自动生成的构造函数存根
 	}
+=======
+	private boolean showShake = true;			//震动
+	private String showRing;					//铃声
+	private Vibrator vibrator;
+	MediaPlayer player;
+>>>>>>> second commit
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -55,23 +67,34 @@ public class BreakActivity extends Activity implements OnClickListener {
 		rest = intent.getIntExtra("rest", 5);
 		showShake=intent.getBooleanExtra("showShake", true);
 		showRing=intent.getStringExtra("showRing");
+<<<<<<< HEAD
 		Log.v("MAIN", showRing+"-showRing");
 		timeSpan = rest * 60 * 1000;
 		breakProgressBar.setMax(rest*60);
 		returnbButton.setOnClickListener(this);
 		time = new TimeCount(timeSpan, 1000);		//构造CountDownTimer对象
+=======
+		timeSpan = rest * 60 * 1000;
+		breakProgressBar.setMax(rest*60);
+		returnbButton.setOnClickListener(this);
+		time = new TimeCount(timeSpan, 1000);
+>>>>>>> second commit
 		time.start();
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
+<<<<<<< HEAD
 		if (player != null) {
 			if (player.isPlaying()) {
 				player.stop();
 			}
 		}
 		Log.v("MAIN", "Doing BreakActivity-onPause");
+=======
+		if (player != null&&player.isPlaying()) player.stop();
+>>>>>>> second commit
 	}
 
 	class TimeCount extends CountDownTimer {
@@ -81,11 +104,18 @@ public class BreakActivity extends Activity implements OnClickListener {
 		/**
 		 * 计时过程显示
 		 */
+<<<<<<< HEAD
 		@SuppressLint("SimpleDateFormat")
 		@Override
 		public void onTick(long millisUntilFinished) {
 			int nowprogress;
 			String string = new SimpleDateFormat("mm:ss").format(new Date(millisUntilFinished));
+=======
+		@Override
+		public void onTick(long millisUntilFinished) {
+			int nowprogress;
+			String string = new SimpleDateFormat("mm:ss",Locale.getDefault()).format(new Date(millisUntilFinished));
+>>>>>>> second commit
 			breakTextView.setText(string);
 			nowprogress = (int)(rest*60-millisUntilFinished/1000);
 			breakProgressBar.setProgress(nowprogress);
@@ -102,7 +132,10 @@ public class BreakActivity extends Activity implements OnClickListener {
 				vibrator.vibrate(pattern,-1);           //重复两次上面的pattern 如果只想震动一次，index设为-1   
 			}
 			if (showRing != "") {
+<<<<<<< HEAD
 				Log.v("MAIN", "Doing show ring");
+=======
+>>>>>>> second commit
 				//开启铃声
 				player = new MediaPlayer();
 				Uri uri = Uri.parse(showRing);
@@ -114,7 +147,10 @@ public class BreakActivity extends Activity implements OnClickListener {
 				final AudioManager audioManager = (AudioManager) BreakActivity.this.getSystemService(Context.AUDIO_SERVICE);
 				if (audioManager.getStreamVolume(AudioManager.STREAM_RING) != 0) {
 					player.setAudioStreamType(AudioManager.STREAM_RING);
+<<<<<<< HEAD
 					Log.v("MAIN", AudioManager.STREAM_RING +"");
+=======
+>>>>>>> second commit
 					player.setLooping(false);
 					try {
 						player.prepare();
@@ -132,6 +168,10 @@ public class BreakActivity extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		finish();		//关闭当前activity 进入上一个activity该activity必须是主activity
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> second commit
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
@@ -155,27 +195,45 @@ public class BreakActivity extends Activity implements OnClickListener {
 		}
 	    return super.onKeyDown(keyCode, event);
 	}
+<<<<<<< HEAD
 	@Override
 	protected void onRestart() {
 		super.onRestart();
 		Log.v("MAIN", "BreakActivity-onRestart");
+=======
+	
+	@Override
+	protected void onRestart() {
+		super.onRestart();
+>>>>>>> second commit
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
+<<<<<<< HEAD
 		Log.v("MAIN", "BreakActivity-onResume");
+=======
+>>>>>>> second commit
 	}
 
 	@Override
 	protected void onStop() {
 		super.onStop();
+<<<<<<< HEAD
 		Log.v("MAIN", "BreakActivity-onStop");
+=======
+>>>>>>> second commit
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
+<<<<<<< HEAD
 		Log.v("MAIN", "BreakActivity-onDestroy");
 	}
 }
+=======
+	}
+}
+>>>>>>> second commit

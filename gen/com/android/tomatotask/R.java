@@ -15,9 +15,14 @@ public final class R {
         public static final int my_alpha_action=0x7f090003;
         public static final int my_rotate_action=0x7f090004;
         public static final int my_scale_action=0x7f090005;
+<<<<<<< HEAD
         public static final int myanimation_simple=0x7f090006;
         public static final int myown_design=0x7f090007;
         public static final int scale_rotate=0x7f090008;
+=======
+        public static final int myown_design=0x7f090006;
+        public static final int scale_rotate=0x7f090007;
+>>>>>>> second commit
     }
     public static final class array {
         public static final int BreakTime=0x7f0c0002;
@@ -61,8 +66,13 @@ public final class R {
         public static final int guide_dot_black=0x7f02000f;
         public static final int guide_dot_white=0x7f020010;
         public static final int guide_round=0x7f020011;
+<<<<<<< HEAD
         public static final int ic_launcher=0x7f020003;
         public static final int ic_launcher1=0x7f020012;
+=======
+        public static final int ic2=0x7f020012;
+        public static final int ic_launcher=0x7f020003;
+>>>>>>> second commit
         public static final int maintomato=0x7f020013;
         public static final int new_btn_gray=0x7f020014;
         public static final int number=0x7f020004;
@@ -151,21 +161,33 @@ public final class R {
         public static final int main=0x7f070000;
     }
     public static final class string {
+<<<<<<< HEAD
         public static final int EndBreak=0x7f050009;
         public static final int EndTask=0x7f050006;
+=======
+        public static final int EndTask=0x7f050005;
+>>>>>>> second commit
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         /**   Strings for possible PreferenceActivity Back/Next buttons 
          */
         public static final int back_button_label=0x7f050002;
+<<<<<<< HEAD
         public static final int breakcharSequence=0x7f050008;
+=======
+>>>>>>> second commit
         public static final int next_button_label=0x7f050003;
         /**  Optional button to Skip a PreferenceActivity [CHAR LIMIT=20] 
          */
         public static final int skip_button_label=0x7f050004;
+<<<<<<< HEAD
         public static final int startTomato=0x7f050007;
         public static final int tomatocharSequence=0x7f050005;
         public static final int tv_fqsj=0x7f05000a;
+=======
+        public static final int startTomato=0x7f050006;
+        public static final int tv_fqsj=0x7f050007;
+>>>>>>> second commit
     }
     public static final class style {
         /** <public type="string" name="hello_world" id="0x7f050002" />  
@@ -192,6 +214,10 @@ public final class R {
          */
         public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 
+<<<<<<< HEAD
+=======
+ 在这里设置APP界面的样式，windowNoTitle表示没有标题 
+>>>>>>> second commit
          */
         public static final int AppTheme=0x7f060001;
     }

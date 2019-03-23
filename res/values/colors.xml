@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <color name="white">#FFFFFFFF</color>
     <color name="ShanLanSe">#00ffff</color>
     
     
+=======
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="ShanLanSe">#00ffff</color>
+
+>>>>>>> second commit
 </resources>

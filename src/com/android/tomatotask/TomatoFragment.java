@@ -1,6 +1,9 @@
 /**
  * 模块名称：任务统计模块
+<<<<<<< HEAD
  * Author：ｍｅｅｐｏ
+=======
+>>>>>>> second commit
  * 模块作用：统计今日已经完成的任务总数和历史任务总数
  * 
  */
@@ -8,6 +11,10 @@ package com.android.tomatotask;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
+<<<<<<< HEAD
+=======
+
+>>>>>>> second commit
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,7 +22,10 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
+<<<<<<< HEAD
 import android.util.Log;
+=======
+>>>>>>> second commit
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +38,11 @@ public class TomatoFragment extends Fragment {
 	private View mMainView;
 	private int todayTomatoCount;
 	private int allTomatoCount;
+<<<<<<< HEAD
 	SharedPreferences myshPreferences;
+=======
+	private SharedPreferences myshPreferences;
+>>>>>>> second commit
 	int tick;
 
 	@Override
@@ -45,7 +59,10 @@ public class TomatoFragment extends Fragment {
 		tomatoTxtView.setTypeface(fontFace);
 		todayTomatoCountTextView.setTypeface(fontFace);
 		allTomatoCountTextView.setTypeface(fontFace);
+<<<<<<< HEAD
 		Log.i("MAIN", "++++++++TomatoFragment++++++++onCreate++++++++");
+=======
+>>>>>>> second commit
 		imageView.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -58,21 +75,31 @@ public class TomatoFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState)
 	{
+<<<<<<< HEAD
 		Log.i("MAIN", "++++++++TomatoFragment++++++++onCreateView++++++++");
 		ViewGroup p = (ViewGroup)mMainView.getParent();
 		if (p!=null) {
 			p.removeAllViewsInLayout();
 			Log.i("MAIN", "++++++++TomatoFragment++++++++removeAllViewsInLayout!!!!!!!!");
 		}
+=======
+		ViewGroup p = (ViewGroup)mMainView.getParent();
+		if (p!=null) p.removeAllViewsInLayout();
+>>>>>>> second commit
 		return mMainView;
 	}
 	
 	@Override
 	public void onResume() {
 		super.onResume();
+<<<<<<< HEAD
 		Log.i("MAIN", "++++++++TomatoFragment++++++++onResume++++++++");
 		//时间日期的读取，如果时间不是今天的时间，则置今日番茄数为 0 
 		// 配置读取
+=======
+		//时间日期的读取，如果时间不是今天的时间，则置今日番茄数为 0
+		//配置读取
+>>>>>>> second commit
 		SharedPreferences mySharedPreferences = getActivity().getSharedPreferences("TomatoCount",Activity.MODE_PRIVATE);
 		String dateStr = mySharedPreferences.getString("date", "2001-01-01");
 		todayTomatoCount = mySharedPreferences.getInt("todayTomatoCount", 0);		//获取存储的今日番茄时间
@@ -86,12 +113,21 @@ public class TomatoFragment extends Fragment {
 		}
 		todayTomatoCountTextView.setText("今日:"+todayTomatoCount);
 		allTomatoCountTextView.setText("总计:"+allTomatoCount);
+<<<<<<< HEAD
 		Log.v("MAIN", "----TomatoFragment---todayTomatoCount---------"+todayTomatoCount+"-------");
 		Log.v("MAIN", "----TomatoFragment---allTomatoCount---------"+allTomatoCount+"-------");
 		Log.v("MAIN", "----TomatoFragment---dateStr---------"+dateStr+"-------");
 		//修改主界面番茄图片
 		myshPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
 		tick = Integer.parseInt(myshPreferences.getString("TomatoTime_value","25"));
+=======
+		//修改主界面番茄图片
+		myshPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+		tick = Integer.parseInt(myshPreferences.getString("TomatoTime_value","25"));
+		/**
+		 * 根据设置休息时间的不同修改不同的番茄图片
+		 * */
+>>>>>>> second commit
 		switch (tick) {
 		case 25:
 			imageView.setImageResource(R.drawable.tomato_25);
@@ -113,24 +149,36 @@ public class TomatoFragment extends Fragment {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
+<<<<<<< HEAD
 		Log.i("MAIN", "++++++++TomatoFragment++++++++onDestroy++++++++");
+=======
+>>>>>>> second commit
 	}
 	
 	@Override
 	public void onPause() {
 		super.onPause();
+<<<<<<< HEAD
 		Log.i("MAIN", "++++++++TomatoFragment++++++++onPause++++++++");
+=======
+>>>>>>> second commit
 	}
 	
 	@Override
 	public void onStart() {
 		super.onStart();
+<<<<<<< HEAD
 		Log.i("MAIN", "++++++++TomatoFragment++++++++onStart++++++++");
+=======
+>>>>>>> second commit
 	}
 	
 	@Override
 	public void onStop() {
 		super.onStop();
+<<<<<<< HEAD
 		Log.i("MAIN", "++++++++TomatoFragment++++++++onStop++++++++");
+=======
+>>>>>>> second commit
 	}
 }

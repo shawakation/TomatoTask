@@ -5,14 +5,28 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+<<<<<<< HEAD
 import com.android.tomatotask.Task.*;
+=======
+
+import com.android.tomatotask.Task.ChangeSqlite;
+import com.android.tomatotask.Task.Date;
+import com.android.tomatotask.Task.DrawLine;
+import com.android.tomatotask.Task.Notepad;
+import com.android.tomatotask.Task.NotepadAdapter;
+import com.android.tomatotask.Task.SqliteHelper;
+
+>>>>>>> second commit
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+<<<<<<< HEAD
 import android.util.Log;
+=======
+>>>>>>> second commit
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,12 +75,20 @@ public class TaskFragment extends Fragment {
 			//点击记录按钮后进行的操作
 			@Override
 			public void onClick(View v) {
+<<<<<<< HEAD
 			     textView = ((TextView)layout.findViewById(R.id.writedate));
 			     editText = ((DrawLine)layout.findViewById(R.id.edittext));
 			     getDate = new Date();
 			     date = getDate.getDate();		//保存当前的日期
 			    textView.setText(date);
 			    
+=======
+			    textView = ((TextView)layout.findViewById(R.id.writedate));
+			    editText = ((DrawLine)layout.findViewById(R.id.edittext));
+			    getDate = new Date();
+			    date = getDate.getDate();		//保存当前的日期
+			    textView.setText(date);
+>>>>>>> second commit
 			    layout = (RelativeLayout)(getActivity().getLayoutInflater().inflate(R.layout.writedown, null));	//设置点击按钮后弹出界面的布局
 				new AlertDialog.Builder(getActivity()).setView(layout).setPositiveButton("保存", new DialogInterface.OnClickListener() {
 					@Override
@@ -93,7 +115,10 @@ public class TaskFragment extends Fragment {
 				}).show();
 			}
 		});
+<<<<<<< HEAD
 		Log.i("MAIN", "^^^^^^^^TaskFragment^^^^^^^^onCreate^^^^^^^^");
+=======
+>>>>>>> second commit
 	}
 	
 	class ItemClick implements AdapterView.OnItemClickListener {
@@ -143,41 +168,61 @@ public class TaskFragment extends Fragment {
 	public void onResume() {
 		super.onResume();
 		showUpdate();
+<<<<<<< HEAD
 		Log.i("MAIN", "^^^^^^^^TaskFragment^^^^^^^^onResume^^^^^^^^");
+=======
+>>>>>>> second commit
 	}
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+<<<<<<< HEAD
 		Log.i("MAIN", "^^^^^^^^TaskFragment^^^^^^^^onCreateView^^^^^^^^");
 		ViewGroup p = (ViewGroup) mMainView.getParent();
 		if (p != null) {
 			p.removeAllViewsInLayout();
 			Log.i("MAIN", "^^^^^^^^TaskFragment^^^^^^^^removeAllViewsInLayout!!!!!!!!");
 		}
+=======
+		ViewGroup p = (ViewGroup) mMainView.getParent();
+		if (p != null) p.removeAllViewsInLayout();
+>>>>>>> second commit
 		return mMainView;
 	}
 	
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
+<<<<<<< HEAD
 		Log.i("MAIN", "^^^^^^^^TaskFragment^^^^^^^^onDestroy Method^^^^^^^^");
+=======
+>>>>>>> second commit
 	}
 	
 	@Override
 	public void onPause() {
 		super.onPause();
+<<<<<<< HEAD
 		Log.i("MAIN", "^^^^^^^^TaskFragment^^^^^^^^onPause^^^^^^^^");
+=======
+>>>>>>> second commit
 	}
 	
 	@Override
 	public void onStart() {
 		super.onStart();
+<<<<<<< HEAD
 		Log.i("MAIN", "^^^^^^^^TaskFragment^^^^^^^^onStart^^^^^^^^");
+=======
+>>>>>>> second commit
 	}
 	
 	@Override
 	public void onStop() {
 		super.onStop();
+<<<<<<< HEAD
 		Log.i("MAIN", "^^^^^^^^TaskFragment^^^^^^^^onStop^^^^^^^^");
+=======
+>>>>>>> second commit
 	}
 }

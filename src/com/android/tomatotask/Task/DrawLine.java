@@ -28,4 +28,8 @@ public class DrawLine extends EditText {
 		}
 		super.onDraw(canvas);
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> second commit

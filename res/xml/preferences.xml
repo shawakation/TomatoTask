@@ -21,6 +21,7 @@
         <CheckBoxPreference
             android:key="startShake"
             android:title="震动" />
+<<<<<<< HEAD
         <!--
              <CheckBoxPreference android:key="startDiDa"
             android:summary="是否开启滴答声" android:title="滴答声" />
@@ -30,6 +31,9 @@
             android:title="铃声" android:ringtoneType="all" android:showDefault="true"
             android:showSilent="true" />
         -->
+=======
+
+>>>>>>> second commit
         <Preference
             android:key="pref_ringtone"
             android:ringtoneType="notification"

@@ -1,8 +1,20 @@
+<<<<<<< HEAD
 package com.android.tomatotask.Task;
 
 public class Notepad {
 	public String content;		//笔记内容
 	public String data;		//笔记日期
+=======
+/**
+ * 笔记的数据模型
+ * */
+package com.android.tomatotask.Task;
+
+public class Notepad
+{
+	public String content;		//笔记内容
+	public String data;			//笔记日期
+>>>>>>> second commit
 	public String id;			//笔记ID
 	public String title;		//标题
 

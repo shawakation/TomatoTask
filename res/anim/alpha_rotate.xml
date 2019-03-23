@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <set
 xmlns:android="http://schemas.android.com/apk/res/android"
 android:shareInterpolator="false"
@@ -21,3 +22,25 @@ android:shareInterpolator="false"
         android:duration="3000" />
         
 </set>
+=======
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false" >
+
+    <alpha
+        android:duration="3000"
+        android:fromAlpha="0.0"
+        android:interpolator="@android:res/anim/accelerate_decelerate_interpolator"
+        android:repeatCount="0"
+        android:toAlpha="1.0" >
+    </alpha>
+
+    <rotate
+        android:duration="3000"
+        android:fromDegrees="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="+360" />
+
+</set>
+>>>>>>> second commit

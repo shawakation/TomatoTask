@@ -1,9 +1,22 @@
+<<<<<<< HEAD
+=======
+/**
+ * 使笔记显示在界面上
+ * */
+>>>>>>> second commit
 package com.android.tomatotask.Task;
 
 import java.util.ArrayList;
 import java.util.Map;
+<<<<<<< HEAD
 import com.android.tomatotask.R;
 import com.android.tomatotask.TaskFragment;
+=======
+
+import com.android.tomatotask.R;
+import com.android.tomatotask.TaskFragment;
+
+>>>>>>> second commit
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -54,9 +67,14 @@ public class NotepadAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int arg0, View arg1, ViewGroup arg2) {
+<<<<<<< HEAD
 		// 此处在去掉if语句之后，刷新语句重新生效
 		SetShow setShow = new SetShow();
 		// 取出map中的展开标记
+=======
+		SetShow setShow = new SetShow();
+		//取出map中的展开标记
+>>>>>>> second commit
 		Map<String, Object> map = list.get(arg0);
 		boolean boo = (Boolean) map.get("EXPANDED");
 		if (!boo) {
@@ -123,10 +141,17 @@ public class NotepadAdapter extends BaseAdapter {
 			setEdit.dateNow = new Date();
 			setEdit.date = setEdit.dateNow.getDate();
 			setEdit.textView.setText(setEdit.date);
+<<<<<<< HEAD
 //			//修改字体
 //			Typeface fontFace = Typeface.createFromAsset(taskFragment.getActivity().getAssets(), "fonts/Roboto-Thin.ttf");
 //			setEdit.textView.setTypeface(fontFace);
 //			setEdit.editText.setTypeface(fontFace);
+=======
+			//修改字体
+			Typeface fontFace = Typeface.createFromAsset(taskFragment.getActivity().getAssets(), "fonts/Roboto-Thin.ttf");
+			setEdit.textView.setTypeface(fontFace);
+			setEdit.editText.setTypeface(fontFace);
+>>>>>>> second commit
 			new AlertDialog.Builder(activity)
 					.setView(setEdit.layout)
 					.setPositiveButton("保存",
@@ -143,11 +168,17 @@ public class NotepadAdapter extends BaseAdapter {
 									}
 									String strTitle = strContent.length() > 11 ? " " + strContent.substring(0, 11) : strContent;
 									localNotepad.setContent(strContent);
+<<<<<<< HEAD
 									System.out.println("-----strContent-----strContent=" + strContent);
 									localNotepad.setTitle(strTitle);
 									localNotepad.setdata(setEdit.date);
 									localNotepad.setid(setEdit.id);
 									System.out.println("-----id-----id=" + setEdit.id);
+=======
+									localNotepad.setTitle(strTitle);
+									localNotepad.setdata(setEdit.date);
+									localNotepad.setid(setEdit.id);
+>>>>>>> second commit
 									localChangeSqlite.update(localSqLiteDatabase, localNotepad);
 									taskFragment.showUpdate();
 								}
@@ -158,6 +189,7 @@ public class NotepadAdapter extends BaseAdapter {
 
 								}
 							}).show();
+<<<<<<< HEAD
 			// Bundle b = new Bundle();
 			// b.putString("contentItem",
 			// (String) list.get(position).get("contentItem"));
@@ -172,6 +204,8 @@ public class NotepadAdapter extends BaseAdapter {
 			//
 			// intent.putExtras(b);
 			// (context).startActivity(intent);
+=======
+>>>>>>> second commit
 		}
 	}
 

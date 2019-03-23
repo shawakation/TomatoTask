@@ -4,9 +4,14 @@ int anim alpha_scale_rotate 0x7f090002
 int anim my_alpha_action 0x7f090003
 int anim my_rotate_action 0x7f090004
 int anim my_scale_action 0x7f090005
+<<<<<<< HEAD
 int anim myanimation_simple 0x7f090006
 int anim myown_design 0x7f090007
 int anim scale_rotate 0x7f090008
+=======
+int anim myown_design 0x7f090006
+int anim scale_rotate 0x7f090007
+>>>>>>> second commit
 int array BreakTime 0x7f0c0002
 int array BreakTime_value 0x7f0c0003
 int array TomatoStart_String 0x7f0c0004
@@ -25,8 +30,13 @@ int drawable button 0x7f020002
 int drawable guide_dot_black 0x7f02000f
 int drawable guide_dot_white 0x7f020010
 int drawable guide_round 0x7f020011
+<<<<<<< HEAD
 int drawable ic_launcher 0x7f020003
 int drawable ic_launcher1 0x7f020012
+=======
+int drawable ic2 0x7f020012
+int drawable ic_launcher 0x7f020003
+>>>>>>> second commit
 int drawable maintomato 0x7f020013
 int drawable new_btn_gray 0x7f020014
 int drawable number 0x7f020004
@@ -105,6 +115,7 @@ int layout tomato_layout 0x7f030009
 int layout viewpager_layout 0x7f03000a
 int layout writedown 0x7f03000b
 int menu main 0x7f070000
+<<<<<<< HEAD
 int string EndBreak 0x7f050009
 int string EndTask 0x7f050006
 int string action_settings 0x7f050001
@@ -116,6 +127,16 @@ int string skip_button_label 0x7f050004
 int string startTomato 0x7f050007
 int string tomatocharSequence 0x7f050005
 int string tv_fqsj 0x7f05000a
+=======
+int string EndTask 0x7f050005
+int string action_settings 0x7f050001
+int string app_name 0x7f050000
+int string back_button_label 0x7f050002
+int string next_button_label 0x7f050003
+int string skip_button_label 0x7f050004
+int string startTomato 0x7f050006
+int string tv_fqsj 0x7f050007
+>>>>>>> second commit
 int style AppBaseTheme 0x7f060000
 int style AppTheme 0x7f060001
 int xml preferences 0x7f0a0000

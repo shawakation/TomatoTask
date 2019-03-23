@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <set xmlns:android="http://schemas.android.com/apk/res/android">
         
 <rotate 
@@ -13,11 +14,29 @@
         android:duration="3000" />
         
 <!-- rotate 旋转动画效果
+=======
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <rotate
+        android:duration="3000"
+        android:fromDegrees="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="+360" />
+
+    <!--
+     rotate 旋转动画效果
+>>>>>>> second commit
 
 
        属性：interpolator 指定一个动画的插入器
         
+<<<<<<< HEAD
         在我试验过程中，使用android.res.anim中的资源时候发现有三种动画插入器
+=======
+        在试验过程中，使用android.res.anim中的资源时候发现有三种动画插入器
+>>>>>>> second commit
         
         accelerate_decelerate_interpolator  加速-减速 动画插入器
         accelerate_interpolator        加速-动画插入器
@@ -53,5 +72,11 @@
         duration  属性为动画持续时间
         说明:     
                      时间以毫秒为单位
+<<<<<<< HEAD
 -->
 </set>
+=======
+    -->
+
+</set>
+>>>>>>> second commit

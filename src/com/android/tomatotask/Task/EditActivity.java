@@ -1,11 +1,22 @@
 package com.android.tomatotask.Task;
 
 import com.android.tomatotask.R;
+<<<<<<< HEAD
+=======
+
+>>>>>>> second commit
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.*;
+=======
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+>>>>>>> second commit
 
 public class EditActivity extends BaseActivity {
 	private Button cancelButton;
@@ -29,7 +40,10 @@ public class EditActivity extends BaseActivity {
 		this.date = getIntent().getStringExtra("dateItem");
 		this.content = getIntent().getStringExtra("contentItem");
 		this.id = getIntent().getStringExtra("idItem");
+<<<<<<< HEAD
 		System.out.println("-----idItem-----id=" + id);
+=======
+>>>>>>> second commit
 		this.editText.setSelection(this.editText.length());
 		this.editText.setText(this.content);
 		this.editText.setSelection(this.content.length());
@@ -53,7 +67,10 @@ public class EditActivity extends BaseActivity {
 				localNotepad.setTitle(strTitle);
 				localNotepad.setdata(date);
 				localNotepad.setid(id);
+<<<<<<< HEAD
 				System.out.println("-----id-----id=" + id);
+=======
+>>>>>>> second commit
 				localChangeSqlite.update(localSqLiteDatabase, localNotepad);
 				finish();
 			}

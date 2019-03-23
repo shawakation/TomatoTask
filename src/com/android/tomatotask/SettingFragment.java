@@ -1,10 +1,17 @@
 package com.android.tomatotask;
 
+<<<<<<< HEAD
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+=======
+import android.app.Activity;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+>>>>>>> second commit
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +38,10 @@ public class SettingFragment extends Fragment {
 		super.onCreate(savedInstanceState);
 		LayoutInflater inflater = getActivity().getLayoutInflater();
 		mMainView = inflater.inflate(R.layout.setting_layout,(ViewGroup) getActivity().findViewById(R.id.viewpager), false);
+<<<<<<< HEAD
 		Log.i("MAIN", "********SettingFragment********onCreate********");
+=======
+>>>>>>> second commit
 		chkShake = (CheckBox) mMainView.findViewById(R.id.chkShake);
 		chkTick = (CheckBox) mMainView.findViewById(R.id.chkTick);
 
@@ -52,7 +62,10 @@ public class SettingFragment extends Fragment {
 		tick = (mySharedPreferences.getInt("tick", 20) - 20);
 		rest = mySharedPreferences.getInt("rest", 1) - 1;
 		longrest = (mySharedPreferences.getInt("longrest", 5) - 5);
+<<<<<<< HEAD
 		Log.i("MAIN", "********tick="+tick+"****rest="+rest+"****longrest="+longrest+"********");
+=======
+>>>>>>> second commit
 
 		// 这三行代码只是为了触发监听事件
 		sbTick.setProgress(tick + 1);
@@ -71,19 +84,27 @@ public class SettingFragment extends Fragment {
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+<<<<<<< HEAD
 		Log.i("MAIN", "********SettingFragment********onCreateView********");
 		ViewGroup p = (ViewGroup) mMainView.getParent();
 		if (p != null) {
 			p.removeAllViewsInLayout();
 			Log.i("MAIN","********SettingFragment********removeAllViewsInLayout!");
 		}
+=======
+		ViewGroup p = (ViewGroup) mMainView.getParent();
+		if (p != null) p.removeAllViewsInLayout();
+>>>>>>> second commit
 		return mMainView;
 	}
 
 	@Override
 	public void onStop() {
 		super.onStop();
+<<<<<<< HEAD
 		Log.i("MAIN", "********SettingFragment********onStop********");
+=======
+>>>>>>> second commit
 		// 计算公式：时间=process*步长+初始值
 		int tick_Change = sbTick.getProgress() + 20;
 		int rest_Change = sbRest.getProgress() + 1;
@@ -109,7 +130,10 @@ public class SettingFragment extends Fragment {
 
 		// 提示已保存
 		Toast.makeText(getActivity(), "设置已保存！", Toast.LENGTH_SHORT).show();
+<<<<<<< HEAD
 		Log.i("MAIN", "********SettingFragment********设置已保存！********");
+=======
+>>>>>>> second commit
 	}
 
 	private class SeekBarListener implements SeekBar.OnSeekBarChangeListener {
@@ -129,11 +153,16 @@ public class SettingFragment extends Fragment {
 			int curTick = progress + StartTick;
 			int remainder = curTick % TickStep;
 			int halfStep = TickStep % 2 == 0 ? TickStep - TickStep % 2 : TickStep - TickStep % 2 + 1;
+<<<<<<< HEAD
 			if (remainder < halfStep) {
 				curTick -= remainder;
 			} else {
 				curTick += (TickStep - remainder);
 			}
+=======
+			if (remainder < halfStep) curTick -= remainder;
+			else curTick += (TickStep - remainder);
+>>>>>>> second commit
 			textView.setText(curTick + "min");
 		}
 
@@ -149,11 +178,16 @@ public class SettingFragment extends Fragment {
 			int curTick = progress + StartTick;
 			int remainder = curTick % TickStep;
 			int halfStep = TickStep % 2 == 0 ? TickStep - TickStep % 2 : TickStep - TickStep % 2 + 1;
+<<<<<<< HEAD
 			if (remainder < halfStep) {
 				curTick -= remainder;
 			} else {
 				curTick += (TickStep - remainder);
 			}
+=======
+			if (remainder < halfStep) curTick -= remainder;
+			else curTick += (TickStep - remainder);
+>>>>>>> second commit
 			seekBar.setProgress(curTick - StartTick);
 			textView.setText(curTick + "min");
 		}
@@ -162,24 +196,36 @@ public class SettingFragment extends Fragment {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
+<<<<<<< HEAD
 		Log.i("MAIN", "********SettingFragment********onDestroy********");
+=======
+>>>>>>> second commit
 	}
 
 	@Override
 	public void onPause() {
 		super.onPause();
+<<<<<<< HEAD
 		Log.i("MAIN", "********SettingFragment********onPause********");
+=======
+>>>>>>> second commit
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
+<<<<<<< HEAD
 		Log.i("MAIN", "********SettingFragment********onResume********");
+=======
+>>>>>>> second commit
 	}
 
 	@Override
 	public void onStart() {
 		super.onStart();
+<<<<<<< HEAD
 		Log.i("MAIN", "********SettingFragment********onStart********");
+=======
+>>>>>>> second commit
 	}
 }

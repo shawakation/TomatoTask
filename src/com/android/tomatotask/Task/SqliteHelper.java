@@ -17,7 +17,11 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
 	  public SqliteHelper(Context paramContext, String paramString, SQLiteDatabase.CursorFactory paramCursorFactory, int paramInt)
 	  {
+<<<<<<< HEAD
 	    super(paramContext, INFONAME, null, VERSION);
+=======
+		  super(paramContext, INFONAME, null, VERSION);
+>>>>>>> second commit
 	  }
 
 	  public void onCreate(SQLiteDatabase paramSQLiteDatabase)

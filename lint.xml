@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
+<<<<<<< HEAD
+=======
+    <issue id="DrawAllocation" severity="ignore" />
+>>>>>>> second commit
     <issue id="InflateParams" severity="ignore" />
     <issue id="InlinedApi">
         <ignore path="src/com/android/tomatotask/ViewPagerActivity.java" />

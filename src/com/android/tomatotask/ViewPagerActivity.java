@@ -5,6 +5,10 @@
  */
 package com.android.tomatotask;
 import java.util.ArrayList;
+<<<<<<< HEAD
+=======
+
+>>>>>>> second commit
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -12,7 +16,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
+<<<<<<< HEAD
 import android.util.Log;
+=======
+>>>>>>> second commit
 import android.util.TypedValue;
 
 public class ViewPagerActivity extends FragmentActivity {
@@ -31,7 +38,10 @@ public class ViewPagerActivity extends FragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.viewpager_layout);
+<<<<<<< HEAD
 		Log.i("MAIN", "--------ViewPagerActivity--------onCreate--------");
+=======
+>>>>>>> second commit
 		m_vp = (ViewPager) findViewById(R.id.viewpager);
 		pagerTabStrip = (PagerTabStrip)findViewById(R.id.pagertab);
 		//设置下划线的颜色
@@ -49,8 +59,13 @@ public class ViewPagerActivity extends FragmentActivity {
 		fragmentList.add(tomatoFragment);
 		fragmentList.add(taskFragment);
 		fragmentList.add(settingPreferenceFragment);
+<<<<<<< HEAD
 	    titleList.add("番茄");
 	    titleList.add("任务");
+=======
+	    titleList.add("任务");
+	    titleList.add("笔记");
+>>>>>>> second commit
 	    titleList.add("设置");
 	    m_vp.setOffscreenPageLimit(1);		//该设置默认值为1   即默认加载下一个页面， 如果为2则加载下2个页面，为0没效果
 	    m_vp.setAdapter(new MyViewPagerAdapter(getSupportFragmentManager()));
@@ -77,6 +92,7 @@ public class ViewPagerActivity extends FragmentActivity {
 		}
 		
 	}
+<<<<<<< HEAD
 	
 	
 //	/**
@@ -238,33 +254,55 @@ public class ViewPagerActivity extends FragmentActivity {
 		// TODO Auto-generated method stub
 		super.onRestart();
 		Log.i("MAIN", "--------ViewPagerActivity--------onRestart--------");
+=======
+
+	@Override
+	protected void onRestart() {
+		super.onRestart();
+>>>>>>> second commit
 	}
 
 	@Override
 	protected void onResume() {
+<<<<<<< HEAD
 		// TODO Auto-generated method stub
 		super.onResume();
 		Log.i("MAIN", "--------ViewPagerActivity--------onResume--------");
+=======
+		super.onResume();
+>>>>>>> second commit
 	}
 
 	@Override
 	protected void onStop() {
+<<<<<<< HEAD
 		// TODO Auto-generated method stub
 		super.onStop();
 		Log.i("MAIN", "--------ViewPagerActivity--------onStop--------");
+=======
+		super.onStop();
+>>>>>>> second commit
 	}
 
 	@Override
 	protected void onPause() {
+<<<<<<< HEAD
 		// TODO Auto-generated method stub
 		super.onPause();
 		Log.i("MAIN", "--------ViewPagerActivity--------onPause--------");
+=======
+		super.onPause();
+>>>>>>> second commit
 	}
 
 	@Override
 	protected void onDestroy() {
+<<<<<<< HEAD
 		// TODO Auto-generated method stub
 		super.onDestroy();
 		Log.i("MAIN", "--------ViewPagerActivity--------onDestroy Method is executed");
+=======
+		super.onDestroy();
+>>>>>>> second commit
 	}
 }
