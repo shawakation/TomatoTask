@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DrawAllocation" severity="ignore" />
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="InlinedApi">
+        <ignore path="src/com/android/tomatotask/ViewPagerActivity.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/android/tomatotask/SettingPreferenceFragment.java" />
+        <ignore path="src/com/android/tomatotask/TaskFragment.java" />
+        <ignore path="src/com/android/tomatotask/TomatoFragment.java" />
+        <ignore path="src/com/android/tomatotask/ViewPagerActivity.java" />
+        <ignore path="src/com/android/tomatotask/preferenceFragment.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/android/tomatotask/MainActivity.java" />
+    </issue>
+</lint>

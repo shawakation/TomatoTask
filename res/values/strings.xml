@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">番茄ToDo</string>
+    <string name="action_settings">设置</string>
+    <string name="EndTask">番茄结束</string>
+    <string name="startTomato">开始！</string>
+    <string name="tv_fqsj">番茄时间</string>
+
+</resources>
